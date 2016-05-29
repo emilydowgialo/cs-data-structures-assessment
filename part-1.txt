@@ -1,0 +1,56 @@
+PART 1
+
+Runtime
+
+1. The workload is the length of the list.
+
+2. O(1), O(log n), o(n), O(n log n), O(n^2), O(2^n), O(n!)
+
+Stacks and Queues
+
+1. a. Stack b. Queue c. Stack
+
+2. Waiting to get a table during brunch at a restaurant. Deep drying karaage -
+the first piece of chicken into the oil is the first taken out once it's done.
+
+3. The last person to squeeze into a crowded elevator is the first person to step out.
+Stacking cookies in a cookie jar (the last one is towards the top and is the
+first to get eaten).
+
+Linked Lists
+
+1. The nodes hold data and a pointer to the next node, so the box with "Apple" and
+"next" is one node, for example. The data in each node is the word ("Apple").
+The head of a list is its first node, where it says "head". The tail is the
+last node in the list, so the tail for this linked list is Cherry.
+
+2. A doubly linked list has two pointers, one that points to the next node and one
+that points to the previous. A singly linked list has one pointer that points to
+its next node.
+
+3. If we did not keep track of the tail as an attribute we would need to iterate
+over the entire list to find the tail, which is expensive. If we keep track of
+the tail, we would immediately know where to append the next node.
+
+Trees
+
+1. A BFS algorithm would start at the root (food) and look at its children
+(Italian, Indian, Mexican). It would then go through these children, starting with
+Italian, checking to see if any of these are burrito. Once it has looked through
+all of its children, it then moves on to its grandchildren. It starts looking at
+the children of Italian, lasagna and pizza, then moved on to the children of Indian,
+tikka masala and saag, then to Mexican, where it will find burrito and return that
+result.
+
+2. A DFS would start at the root (food). This is not Chicago-style, so it would move
+on to its children (Italian, Indian, and Mexican). It would first look at Mexican,
+which is also not what we're looking for, so it would then move on to it's children.
+It would first look at enchilada, then tacos, then burrito. None of these have children,
+so the search would move on to Indian. It would then look at saag, then tikka masala.
+These also do not have children, so the search would move on to Italian. It would
+look at pizza, then at pizza's children. It would start with Sicilian, then
+New York Style, then Chicago-style, returning that result.
+
+3. A binary search tree also has nodes and a similar tree structure, but each node
+has a left and right child, and a rule for arrangement. In a tree, each node could
+have only one child, or many, as in the food tree where pizza has four children.
